@@ -1,0 +1,105 @@
+ @import url(var.css);
+
+body{
+    font-family: sans-serif !important;
+    margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    background: #EEEEEE;
+}
+header{
+    width: 100%;
+    height: 90px;
+    background: var(--VarColor);
+    position: relative;
+}
+.logo{
+    float: left;
+    padding: 26px;
+    margin-left: 50px;
+}
+.logo a{
+    background: var(--VarColor);
+    font-size: 27px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.logo a svg{
+    float: left;
+    height: 50px;
+    width: 200px;
+}
+.dropdownmenu{
+    float: right;
+}
+.dropdownmenu ul, .dropdownmenu li {
+	margin: 0;
+	padding: 0;
+}
+.dropdownmenu ul{
+	list-style: none;
+	width: 100%;
+}
+.dropdownmenu li {
+    float: right;
+	position: relative;
+	width: auto;
+}
+.dropdownmenu a {
+	background: var(--VarColor);
+	color: #FFFFFF;
+	display: block;
+	padding: 35px;
+	text-align: center;
+	text-decoration: none;
+	transition: all .25s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+.dropdownmenu li:hover a {
+	background: #2C3E50;
+}
+
+
+#submenu {
+	left: 0;
+	/* opacity: 0; */
+	position: absolute;
+	top: 75px;
+	/* visibility: hidden; */
+	z-index: 1;
+    display: none;
+    box-shadow: 1px 1px 7px #1e262d42;
+}
+li:hover ul#submenu {
+	opacity: 1;
+	top: 89px;	/* adjust this as per top nav padding top & bottom comes */
+	display: block;
+    /* visibility: visible; */
+}
+#submenu li {
+	float: none;
+	width: 100%;
+}
+#submenu a:hover {
+	background: #e6e6e6;
+    color: #222222;
+}
+#submenu a {
+	background-color:#ffffff;
+    color: #222222;
+}
+
+.search{
+    float: right;
+    padding: 25px;
+}
+.search input{
+    border: none;
+    padding: 10px;
+    border-radius: 100px;
+    margin-right: 50px;
+}
+
